@@ -1,7 +1,8 @@
-# DBATNDA
-Dual Balanced Augmented Topological Non-coding RNA Disease Association in Heterogeneous Graphs
+# DBATNDA: Dual Balanced Augmented Topological Non-coding RNA Disease Association in Heterogeneous Graphs
 
 ![DBATNDA](/image/figure1.jpg)
+
+<p align="center">Overall Framework of DBATNDA</p>
 
 ## Introduction
 In this work, we propose the Dual Balanced Augmented Topological Non-coding RNA Disease Association (DBATNDA) model. DBATNDA constructs an Interaction Dual Graph (IDG) with LDAs, MDAs, and LMIs as nodes and introduces an efficient graph-based balanced topological augmentation mechanism to enhance node structural representation and adaptability to imbalanced data. This innovative approach enables fast and accurate predictions of ncRNA-disease associations through node classification view. To the best of our knowledge, no existing method employs such a dual-representation strategy to provide differentiated predictions for diverse ncRNAs and their disease associations while also enhance target specificity. Experimental results demonstrate DBATNDA’s superior performance compared to state-of-the-art models, while case studies confirm its practical significance in ncRNA-disease association prediction.
