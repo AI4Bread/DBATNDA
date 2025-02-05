@@ -1,8 +1,7 @@
-# DBATNDA: Dual Balanced Augmented Topological Non-coding RNA Disease Association in Heterogeneous Graphs
+# DBATNDA
+Dual Balanced Augmented Topological Non-coding RNA Disease Association in Heterogeneous Graphs
 
 ![DBATNDA](/image/figure1.jpg)
-
-<p align="center">Overall Framework of DBATNDA</p>
 
 ## Introduction
 In this work, we propose the Dual Balanced Augmented Topological Non-coding RNA Disease Association (DBATNDA) model. DBATNDA constructs an Interaction Dual Graph (IDG) with LDAs, MDAs, and LMIs as nodes and introduces an efficient graph-based balanced topological augmentation mechanism to enhance node structural representation and adaptability to imbalanced data. This innovative approach enables fast and accurate predictions of ncRNA-disease associations through node classification view. To the best of our knowledge, no existing method employs such a dual-representation strategy to provide differentiated predictions for diverse ncRNAs and their disease associations while also enhance target specificity. Experimental results demonstrate DBATNDA’s superior performance compared to state-of-the-art models, while case studies confirm its practical significance in ncRNA-disease association prediction.
@@ -13,7 +12,7 @@ The experiments are conducted in the following environment:
 `Python 3.9.19` `PyTorch 2.0.0` `CUDA 11.8` `Numpy 1.26.3` `Pandas 1.4.4` `matplotlib 3.7.3` `sklearn 1.2.2` `seaborn 0.11.0` `torch-geometric 2.5.3`
 
 ### Data Preparation
-The original data need to be preprocessed for the following work, if you want to use your own dataset, run `autoencoder.py` first to get the following data:
+The datasets used in our code are shown in https://kdocs.cn/l/cjN966QZBmw6 . If you want to use your own dataset, the original data need to be preprocessed for the following work, run `autoencoder.py` first to get the following data:
 ```
 --lnc_fun.npy
 --dis_fun.npy
