@@ -95,8 +95,8 @@ lnc_ga_LMI=calculate_GaussianKernel_sim(mi_lnc.T)
 mi_ga_LMI=calculate_GaussianKernel_sim(mi_lnc)
 '''
 
-# 数据准备
-#X = lnc_ga_LDA # 输入数据,形状为(num_samples, input_dim)
+# prepare data
+#X = lnc_ga_LDA
 #X=dis_ga_LDA
 #X=disease_model1_dict
 X=lnc_fun_dict
@@ -118,20 +118,19 @@ X = torch.tensor(X, dtype=torch.float32)
 dataset = torch.utils.data.TensorDataset(X)
 dataloader = torch.utils.data.DataLoader(dataset, batch_size=batch_size, shuffle=True)
 
-# 初始化模型和优化器
+# Initialise
 model = StackedAutoencoder(input_dim, hidden_dims)
 criterion = nn.MSELoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=learning_rate)
 
-# 训练循环
+# training
 for epoch in range(num_epochs):
     for data in dataloader:
         inputs = data[0]
 
-        # 前向传播
         outputs = model(inputs)
         loss = criterion(outputs, inputs)
-        # 反向传播和优化
+
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()

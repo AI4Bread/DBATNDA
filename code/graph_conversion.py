@@ -110,6 +110,7 @@ def get_feature(sim_dict1, sim_dict2, data_dict1, data_dict2, index, adi_matrix,
     output_2 = output_2.ravel()
     return np.array(input), output, output_2
 
+# train-test split for different negative sample ratio
 def create_train_test_sets_cv(labels, negative_ratio):
     positive_indices = np.argwhere(labels > 2)
     np.random.seed(0)
