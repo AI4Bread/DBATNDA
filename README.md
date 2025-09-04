@@ -47,5 +47,10 @@ Run the following code to get the predicting results:
 ```
 python main.py
 ```
+## Citation
+If you use DBATNDA in your research, please cite the following paper:
+
+> Laiyi Fu, Yangyi Zhou, Hongqiang Lyu, Hequan Sun. **"Dual Balanced Augmented Topological Non-coding RNA Disease Association in Heterogeneous Graphs."** *Briefings in Bioinformatics*, Volume 26, Issue 4, Aug 2025, bbaf389.  
+> [https://academic.oup.com/bib/article/26/4/bbaf389/8221468](https://academic.oup.com/bib/article/26/4/bbaf389/8221468)
 
 
